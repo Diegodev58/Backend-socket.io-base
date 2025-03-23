@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Datos a Node.js</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <!-- Lista para mostrar los usuarios -->
+    <ul id="lista-usuarios"></ul>
+
+    <!-- Formulario para agregar nuevos usuarios -->
+    <form id="form-usuario">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="text" id="email" placeholder="Email" required>
+        <button type="submit">Agregar Usuario</button>
+    </form>
+
+    <!-- Incluir Socket.IO desde el servidor -->
+    <!-- (Socket.IO se sirve automáticamente desde el servidor en: server.js) -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Incluir el archivo JavaScript del cliente -->
+    <!-- (Este archivo maneja la lógica del cliente) -->
+    <script src="script.js"></script>
+</body>
+</html>
